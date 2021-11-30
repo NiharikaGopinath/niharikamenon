@@ -94,10 +94,10 @@ p {
 .typewriter h3 {
   font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .15em solid #32ac9b; /* The typwriter cursor */
+  border-right: .12em solid #32ac9b; /* The typwriter cursor */
   white-space: nowrap; /* Keeps the content on a single line */
   margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .13em; /* Adjust as needed */
+  letter-spacing: .12em; /* Adjust as needed */
   animation: 
     typing 3.5s steps(25, end),
     blink-caret .75s step-end infinite;
