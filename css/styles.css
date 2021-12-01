@@ -4,7 +4,7 @@
 * Copyright 2013-2020 Start Bootstrap
 * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-resume/blob/master/LICENSE)
 */
-/*!
+/* !
  * Bootstrap v4.5.0 (https://getbootstrap.com/)
  * Copyright 2011-2020 The Bootstrap Authors
  * Copyright 2011-2020 Twitter, Inc.
@@ -91,29 +91,109 @@ p {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-.typewriter h3 {
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  overflow: hidden; /* Ensures the content is not revealed until the animation */
-  border-right: .12em solid #32ac9b; /* The typwriter cursor */
-  white-space: nowrap; /* Keeps the content on a single line */
-  margin: 0 auto; /* Gives that scrolling effect as the typing happens */
-  letter-spacing: .11em; /* Adjust as needed */
+/*.typewriter h4 {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  overflow: hidden; /* Ensures the content is not revealed until the animation 
+  border-right: .12em solid #32ac9b; /* The typwriter cursor 
+  white-space: nowrap; /* Keeps the content on a single line 
+  margin: 0 auto; /* Gives that scrolling effect as the typing happens 
+  letter-spacing: .04em; /* Adjust as needed 
   animation: 
     typing 3.5s steps(25, end),
     blink-caret .75s step-end infinite;
-}
-
-/* The typing effect */
+}*/
+/*
+/* The typing effect 
 @keyframes typing {
   from { width: 0 }
   to { width: 100% }
 }
 
-/* The typewriter cursor effect */
+/* The typewriter cursor effect 
 @keyframes blink-caret {
   from, to { border-color: transparent }
   40% { border-color: #32ac9b; }
 }
+
+*/
+
+body {
+  background: rgb(255, 255, 255);
+  padding-top: 5em;
+  display: flex;
+  flex-flow: wrap column;
+  justify-content: left;
+  align-items: left;
+}
+
+.typewriter {
+  background-color: #fff;
+  min-width: 500px;
+  
+    
+  margin: 2em;
+  display: flex;
+  align-items: left;
+}
+
+
+.typewriter p {
+  color: #32ac9b;
+  font-size: 1.5em;
+  font-weight: 500;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+
+  width: 0;
+  max-width: max-content;
+  overflow: hidden; 
+  border-right: .05em solid #464545; /* The typwriter cursor */
+  white-space: nowrap; /* Keeps the content on a single line */
+  margin: 0; /* Gives that scrolling effect as the typing happens */
+}
+
+.typing-erase {
+  animation: 
+    5s typing-erase 5s steps(40, end) infinite,
+    blink-caret .5s step-end infinite;
+}
+
+/* The type and erase effect */
+@keyframes typing-erase {
+  0% { width: 0 }
+  80% { width: 100% }
+  90%, 100% { width: 0 }
+}
+
+/* The typewriter cursor effect */
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: gray }
+}
+.ml15 {
+  font-weight: 800;
+  font-size: 3.8em;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml15 .word {
+  display: inline-block;
+  line-height: 3em;
+}
+
+.ml16 {
+  font-weight: 800;
+  font-size: 5.8em;
+  color: #32ac9b;
+  text-transform: uppercase;
+  letter-spacing: 0.5em;
+}
+
+.ml16 .word1 {
+  display: inline-block;
+  line-height: 3em;
+}
+
 
 abbr[title],
 abbr[data-original-title] {
@@ -386,7 +466,7 @@ template {
 h1, h2, h3, h4, h5, h6,
 .h1, .h2, .h3, .h4, .h5, .h6 {
   margin-bottom: 0.5rem;
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   font-weight: 700;
   line-height: 1.2;
   color: #343a40;
@@ -397,11 +477,11 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 3.5rem;
+  font-size: 4.0rem;
 }
 
 h3, .h3 {
-  font-size: 2rem;
+  font-size: 3rem;
 }
 
 h4, .h4 {
@@ -409,7 +489,7 @@ h4, .h4 {
 }
 
 h5, .h5 {
-  font-size: 1.25rem;
+  font-size: 1.0rem;
 }
 
 h6, .h6 {
@@ -417,8 +497,8 @@ h6, .h6 {
 }
 
 .lead {
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-size: 1.05rem;
+  font-weight: 250;
 }
 
 .display-1 {
@@ -10056,10 +10136,10 @@ p.lead {
 }
 
 .subheading {
-  font-family: "Saira Extra Condensed", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   text-transform: uppercase;
   font-weight: 500;
-  font-size: 1.5rem;
+  font-size: 1.0rem;
 }
 
 #sideNav .navbar-nav .nav-item .nav-link {
@@ -10159,3 +10239,43 @@ section.resume-section .resume-section-content {
     padding-bottom: 5rem;
   }
 }
+
+
+
+
+
+section.cover {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  max-width: 75rem;
+ background-color: #fff;
+ 
+}
+section.cover.cover-content {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  section.cover {
+    min-height: 100vh;
+  }
+}
+@media (min-width: 992px) {
+  section.cover {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+  }
+}
+
+
+
+
+
+
+
