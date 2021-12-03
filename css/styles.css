@@ -5614,12 +5614,12 @@ a.close.disabled {
 }
 .modal-header .close {
   padding: 1rem 1rem;
-  margin: -1rem -1rem -1rem auto;
+  margin: -1rem -1rem -1rem;
 }
 
 .modal-title {
   margin-bottom: 0;
-  line-height: 1.5;
+  line-height: 1.0;
 }
 
 .modal-body {
@@ -10279,3 +10279,6 @@ section.cover.cover-content {
 
 
 
+
+
+/*Modal CSS*/
